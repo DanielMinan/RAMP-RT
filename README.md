@@ -1,4 +1,4 @@
-# **RAMP-RT Dataset**
+# RAMP-RT Dataset
 
 **Rocket, Artillery, and Mortar Projectile Radar Targets**
 

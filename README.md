@@ -22,6 +22,16 @@ Estimated kinematic parameters (from SR-CKF)
 
 RCS statistics (mean and maximum scatter difference)
 
+
+ML – Mortar Light: Light mortar projectiles (typically 60 mm class);
+MM – Mortar Medium: Medium mortar projectiles (e.g., 81–82 mm);
+MH – Mortar Heavy: Heavy mortar rounds (120 mm);
+GL – Gun Light: Light artillery shells fired from gun-howitzer systems (105-122 mm)
+GH – Gun Heavy: Heavy artillery shells (130-155 mm)
+RL – Rocket Light: Light unguided rockets or artillery rockets ( diameter < 127 mm)
+RM – Rocket Medium: Medium-class rockets ( 128 < diameter < 300 mm)
+RH – Rocket Heavy: Heavy artillery rockets ( diameter > 300 mm)
+
 **Intended Use**
 
 RAMP-RT is designed for research in:

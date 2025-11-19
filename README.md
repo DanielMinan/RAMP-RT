@@ -22,6 +22,8 @@ Estimated kinematic parameters (from SR-CKF)
 
 RCS statistics (mean and maximum scatter difference)
 
+<img width="1920" height="967" alt="git-dataset" src="https://github.com/user-attachments/assets/56ba0bab-f793-4708-b22b-41f1804613a5" />
+
 
 ML – Mortar Light: Light mortar projectiles (typically 60 mm class);
 MM – Mortar Medium: Medium mortar projectiles (e.g., 81–82 mm);

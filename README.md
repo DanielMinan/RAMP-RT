@@ -33,6 +33,7 @@ GH – Gun Heavy: Heavy artillery shells (130-155 mm)
 RL – Rocket Light: Light unguided rockets or artillery rockets ( diameter < 127 mm)
 RM – Rocket Medium: Medium-class rockets ( 128 < diameter < 300 mm)
 RH – Rocket Heavy: Heavy artillery rockets ( diameter > 300 mm)
+UN - Unknow class for bad estimation convergence
 
 **Intended Use**
 

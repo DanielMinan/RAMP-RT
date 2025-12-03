@@ -2,28 +2,90 @@
 
 **Rocket, Artillery, and Mortar Projectile Radar Targets**
 
-**Overview**
+Overview
 
-The RAMP-RT dataset (Rocket, Artillery, Mortar Projectiles – Radar Targets) provides synthetic radar detections and state estimates for ballistic trajectories generated using a point-mass model. Each trajectory corresponds to a specific projectile class (e.g., ML, MM, MH, GL, GH, RL, RM, RH and Unknow UN), covering a broad range of calibers and dynamic regimes typical of battlefield projectiles.
+The RAMP-RT dataset (Rocket, Artillery, Mortar Projectiles – Radar Targets) provides a comprehensive collection of synthetic and real radar measurements of ballistic projectiles, along with state estimates obtained through the Square-Root Cubature Kalman Filter (SR-CKF).
+It contains a total of 5,048 feature vectors, each associated with one of the projectile classes:
 
-**Data Generation**
+ML – Mortar Light (≈ 60 mm)
 
-All trajectories were simulated using a point-mass model with gravity and aerodynamic drag. The radar detections (range, azimuth, elevation) were synthetically generated to emulate a typical Weapon Locating Radar (WLR) ( or Firefinder Radar or Counter-Battery Radar) operating scenario. Measurement noise was added according to realistic sensor parameters (e.g., SNR, angular and range noise).
+MM – Mortar Medium (≈ 81–82 mm)
 
-The state estimation for each trajectory was performed using the Square-Root Cubature Kalman Filter (SR-CKF), without prior knowledge of the ballistic coefficient. Thus, the dataset provides estimated parameters derived directly from radar measurements.
+MH – Mortar Heavy (120 mm)
+
+GL – Gun Light (105–122 mm)
+
+GH – Gun Heavy (130–155 mm)
+
+RL – Rocket Light (< 127 mm)
+
+RM – Rocket Medium (128–300 mm)
+
+RH – Rocket Heavy (> 300 mm)
+
+UN – Unknown / ill-conditioned estimation cases
+
+These classes cover a broad range of calibers and dynamic regimes typically observed in battlefield environments.
+
+A total of 1,650 ballistic trajectories were generated using a point-mass model incorporating gravity and aerodynamic drag.
+For each trajectory, synthetic radar detections—range, azimuth, and elevation—were produced to emulate a modern Weapon Locating Radar (WLR) (e.g., Firefinder/Counter-Battery Radar).
+Realistic sensor errors were applied, including:
+
+range noise (10 m)
+
+angular noise (≈ 2 mrad)
+
+SNR-consistent scattering fluctuations
+
+SR-CKF Estimation
+
+For every trajectory, the SR-CKF estimated:
+
+projectile position and velocity
+unconstrained ballistic coefficient 
+	​
+No prior knowledge of c_B or drag model was assumed, ensuring realism under uncertain aerodynamic regimes.
+
+After filtering and SR-CKF-based extrapolation, the dataset expanded to 5,048 kinematic feature vectors, each containing multiple physical parameters derived purely from radar observables.
 
 **Dataset Contents**
 
-Each record includes:
+Each record in RAMP-RT contains:
 
-Class label (projectile type)
+Class label (9 categories: ML, MM, MH, GL, GH, RL, RM, RH, UN)
 
-Estimated kinematic parameters (from SR-CKF)
-
-RCS statistics (mean and maximum scatter difference)
-
+Estimated kinematic parameters extracted from SR-CKF, including: firing angle, initial velocity ,orizontal range, maximum altitude, mean velocity during the detection interval and estimated ballistic coefficient 	​,RCS statistical descriptors, described below
 <img width="1920" height="967" alt="git-dataset" src="https://github.com/user-attachments/assets/56ba0bab-f793-4708-b22b-41f1804613a5" />
 
+**RCS Features**
+
+A The RCS measurements were incorporated into the dataset, comprising:
+
+- **mean RCS** over the observation window
+  
+- **maximum scatter difference (MSD)**
+  
+
+These features were derived from:
+
+- Numerical scattering models in the literature  
+  ~\cite{kenyon2015numerical,kenyon2015numericalRock,kenyon2016numericInfl}
+- Experimental S-band radar measurements performed at the **Brazilian Army Technological Center (CTEx)**
+
+
+---
+
+## **Real Radar Measurements**
+
+Beyond the synthetic dataset, **105 real projectile trajectories** were included for the **MM (medium mortar)** and **MH (heavy mortar)** classes.  
+These measurements were obtained during live-fire campaigns conducted at:
+
+- **CAEx** – Army Evaluation Center (CAEx)
+  
+- **CTEx** – (CTEx) and the Brazilian Army Technological Center
+  
+
+These real samples serve as an important validation subset for ML classifiers and filter benchmarking.
 
 ML – Mortar Light: Light mortar projectiles (typically 60 mm class);
 MM – Mortar Medium: Medium mortar projectiles (e.g., 81–82 mm);
@@ -37,24 +99,29 @@ UN - Unknow class for bad estimation convergence
 
 **Intended Use**
 
-RAMP-RT is designed for research in:
+Intended Use
 
-Radar signal processing and filtering
+RAMP-RT is designed for advanced research in:
 
-Machine learning classification of ballistic projectiles
+radar signal processing and nonlinear filtering
 
-Estimation and tracking of launch/impact points
+machine learning classification of ballistic projectiles
 
-Dataset generation and benchmarking in counter-battery radar applications
+estimation and tracking of launch and impact points
 
-Example applications
+benchmarking of counter-battery radar algorithms
 
-Training and validation of classifiers distinguishing rockets, artillery, and mortar projectiles based on estimated dynamics.
+fusion of kinematic and RCS-based features
 
-Benchmarking of Kalman filter variants under uncertain aerodynamic conditions.
+Example Applications
 
-Fusion of synthetic radar detections with RCS features for integrated classification and estimation pipelines.
+Training and evaluating classifiers capable of distinguishing rockets, artillery shells, and mortar rounds from radar-derived features
 
+Benchmarking Kalman filter variants under uncertain aerodynamic conditions
+
+Developing integrated pipelines for simultaneous classification and ballistic estimation
+
+Supporting data-driven studies in WLR performance modeling and sensor fusion
 ]
 
 **Contact**

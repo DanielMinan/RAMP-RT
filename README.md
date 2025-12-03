@@ -55,16 +55,7 @@ Benchmarking of Kalman filter variants under uncertain aerodynamic conditions.
 
 Fusion of synthetic radar detections with RCS features for integrated classification and estimation pipelines.
 
-**Citation**
-
-If you use RAMP-RT in your research, please cite it as:
-How to cite:
-@misc{ramp-rt2025,
- title = {RAMP-RT: Rocket, Artillery, and Mortar Radar Targets Dataset},
- author = {Crus, D. M. O.},
- year = {2025},
- howpublished = {GitHub repository, https://github.com/DanielMinan/RAMP-RT}
-}
+]
 
 **Contact**
 For questions or requests (access to raw logs, provenance details, endorsement for use in publications): [minan.daniel@ime.eb.br]

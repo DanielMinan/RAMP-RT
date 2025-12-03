@@ -4,7 +4,7 @@
 
 **Overview**
 
-The RAMP-RT dataset (Rocket, Artillery, Mortar Projectiles – Radar Targets) provides synthetic radar detections and state estimates for ballistic trajectories generated using a point-mass model. Each trajectory corresponds to a specific projectile class (e.g., ML, MM, MH, GL, GH, RL, RM, RH), covering a broad range of calibers and dynamic regimes typical of battlefield projectiles.
+The RAMP-RT dataset (Rocket, Artillery, Mortar Projectiles – Radar Targets) provides synthetic radar detections and state estimates for ballistic trajectories generated using a point-mass model. Each trajectory corresponds to a specific projectile class (e.g., ML, MM, MH, GL, GH, RL, RM, RH and Unknow UN), covering a broad range of calibers and dynamic regimes typical of battlefield projectiles.
 
 **Data Generation**
 

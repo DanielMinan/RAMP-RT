@@ -87,16 +87,6 @@ These measurements were obtained during live-fire campaigns conducted at:
 
 These real samples serve as an important validation subset for ML classifiers and filter benchmarking.
 
-ML – Mortar Light: Light mortar projectiles (typically 60 mm class);
-MM – Mortar Medium: Medium mortar projectiles (e.g., 81–82 mm);
-MH – Mortar Heavy: Heavy mortar rounds (120 mm);
-GL – Gun Light: Light artillery shells fired from gun-howitzer systems (105-122 mm)
-GH – Gun Heavy: Heavy artillery shells (130-155 mm)
-RL – Rocket Light: Light unguided rockets or artillery rockets ( diameter < 127 mm)
-RM – Rocket Medium: Medium-class rockets ( 128 < diameter < 300 mm)
-RH – Rocket Heavy: Heavy artillery rockets ( diameter > 300 mm)
-UN - Unknow class for bad estimation convergence
-
 **Intended Use**
 
 Intended Use

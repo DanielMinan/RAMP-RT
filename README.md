@@ -87,32 +87,21 @@ These measurements were obtained during live-fire campaigns conducted at:
 
 These real samples serve as an important validation subset for ML classifiers and filter benchmarking.
 
-**Intended Use**
+## **Intended Use**
 
-Intended Use
 
-RAMP-RT is designed for advanced research in:
-
-radar signal processing and nonlinear filtering
-
-machine learning classification of ballistic projectiles
-
-estimation and tracking of launch and impact points
-
-benchmarking of counter-battery radar algorithms
-
-fusion of kinematic and RCS-based features
+RAMP-RT is designed for advanced research in: Radar signal processing and nonlinear filtering, machine learning classification of ballistic projectiles, estimation and tracking of launch and impact points, benchmarking of counter-battery radar algorithms and fusion of kinematic and RCS-based features
 
 Example Applications
 
-Training and evaluating classifiers capable of distinguishing rockets, artillery shells, and mortar rounds from radar-derived features
+- Training and evaluating classifiers capable of distinguishing rockets, artillery shells, and mortar rounds from radar-derived features
 
-Benchmarking Kalman filter variants under uncertain aerodynamic conditions
+- Benchmarking Kalman filter variants under uncertain aerodynamic conditions
 
-Developing integrated pipelines for simultaneous classification and ballistic estimation
+- Developing integrated pipelines for simultaneous classification and ballistic estimation
 
-Supporting data-driven studies in WLR performance modeling and sensor fusion
-]
+- Supporting data-driven studies in WLR performance modeling and sensor fusion
+
 
 **Contact**
 For questions or requests (access to raw logs, provenance details, endorsement for use in publications): [minan.daniel@ime.eb.br]

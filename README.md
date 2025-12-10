@@ -29,13 +29,7 @@ These classes cover a broad range of calibers and dynamic regimes typically obse
 
 A total of 1,650 ballistic trajectories were generated using a point-mass model incorporating gravity and aerodynamic drag.
 For each trajectory, synthetic radar detections—range, azimuth, and elevation—were produced to emulate a modern Weapon Locating Radar (WLR) (e.g., Firefinder/Counter-Battery Radar).
-Realistic sensor errors were applied, including:
-
-range noise (10 m)
-
-angular noise (≈ 2 mrad)
-
-SNR-consistent scattering fluctuations
+Realistic sensor errors were applied, including: range noise (10 m), angular noise (≈ 2 mrad), SNR-consistent scattering fluctuations
 
 SR-CKF Estimation
 

@@ -7,23 +7,23 @@ Overview
 The RAMP-RT dataset (Rocket, Artillery, Mortar Projectiles – Radar Targets) provides a comprehensive collection of synthetic and real radar measurements of ballistic projectiles, along with state estimates obtained through the Square-Root Cubature Kalman Filter (SR-CKF).
 It contains a total of 5,048 feature vectors, each associated with one of the projectile classes:
 
-ML – Mortar Light (≈ 60 mm)
+- ML – Mortar Light (≈ 60 mm)
 
-MM – Mortar Medium (≈ 81–82 mm)
+- MM – Mortar Medium (≈ 81–82 mm)
 
-MH – Mortar Heavy (120 mm)
+- MH – Mortar Heavy (120 mm)
 
-GL – Gun Light (105–122 mm)
+- GL – Gun Light (105–122 mm)
 
-GH – Gun Heavy (130–155 mm)
+- GH – Gun Heavy (130–155 mm)
 
-RL – Rocket Light (< 127 mm)
+- RL – Rocket Light (< 127 mm)
 
-RM – Rocket Medium (128–300 mm)
+- RM – Rocket Medium (128–300 mm)
 
-RH – Rocket Heavy (> 300 mm)
+- RH – Rocket Heavy (> 300 mm)
 
-UN – Unknown / ill-conditioned estimation cases
+- UN – Unknown / ill-conditioned estimation cases
 
 These classes cover a broad range of calibers and dynamic regimes typically observed in battlefield environments.
 
@@ -54,7 +54,7 @@ Each record in RAMP-RT contains:
 
 Class label (9 categories: ML, MM, MH, GL, GH, RL, RM, RH, UN)
 
-Estimated kinematic parameters extracted from SR-CKF, including: firing angle, initial velocity ,orizontal range, maximum altitude, mean velocity during the detection interval and estimated ballistic coefficient 	​,RCS statistical descriptors, described below
+Estimated kinematic parameters extracted from SR-CKF, including: firing angle, initial velocity , horizontal range, maximum altitude, mean velocity during the detection interval and estimated ballistic coefficient 	​,RCS statistical descriptors, described below
 <img width="1920" height="967" alt="git-dataset" src="https://github.com/user-attachments/assets/56ba0bab-f793-4708-b22b-41f1804613a5" />
 
 **RCS Features**

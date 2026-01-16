@@ -7,21 +7,21 @@ Overview
 The RAMP-RT dataset (Rocket, Artillery, Mortar Projectiles – Radar Targets) provides a comprehensive collection of synthetic and real radar measurements of ballistic projectiles, along with state estimates obtained through the Square-Root Cubature Kalman Filter (SR-CKF).
 It contains a total of 5,048 feature vectors, each associated with one of the projectile classes:
 
-- ML – Mortar Light (≈ 60 mm)
+- LM/ML – Mortar Light (≈ 60 mm)
 
 - MM – Mortar Medium (≈ 81–82 mm)
 
-- MH – Mortar Heavy (120 mm)
+- HM/MH – Mortar Heavy (120 mm)
 
-- GL – Gun Light (105–122 mm)
+- LG/GL – Gun Light (105–122 mm)
 
-- GH – Gun Heavy (130–155 mm)
+- HG/GH – Gun Heavy (130–155 mm)
 
-- RL – Rocket Light (< 127 mm)
+- LR/RL – Rocket Light (< 127 mm)
 
-- RM – Rocket Medium (128–300 mm)
+- MR/RM – Rocket Medium (128–300 mm)
 
-- RH – Rocket Heavy (> 300 mm)
+- HR/RH – Rocket Heavy (> 300 mm)
 
 - UN – Unknown / ill-conditioned estimation cases
 

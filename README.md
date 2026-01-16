@@ -13,9 +13,9 @@ It contains a total of 5,048 feature vectors, each associated with one of the pr
 
 - HM/MH – Mortar Heavy (120 mm)
 
-- LG/GL – Gun Light (105–122 mm)
+- LG/GL – Gun/Howitzer Light (105–122 mm)
 
-- HG/GH – Gun Heavy (130–155 mm)
+- HG/GH – Gun/Howitzer Heavy (130–155 mm)
 
 - LR/RL – Rocket Light (< 127 mm)
 
